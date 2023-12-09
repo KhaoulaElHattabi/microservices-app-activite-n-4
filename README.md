@@ -50,10 +50,34 @@
   
 ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/0829c2b9-91d5-4570-b866-8c356ab9ef06)
 
+- Utilisation des projection pour avoir seulement les champs souhaitées.
+
+  ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/bcc18278-1fe1-43ad-b3dc-69cd4f976539)
+
+
 ### 5 - Inventory Service
 - Dans ce service on a creer une entité Product et les données sont stocké dans la BD H2 en configurant aussi les proprietes de microservice, et finalement on a l'acces avec le gateway
   
 ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/b9e9b8b8-63fa-43a3-ad5a-8bfe1de9020e)
 
+- On a refait la meme chose pour la projection de product 
 
+![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/25083cf3-4762-45da-8a56-d5d12cfeeb7a)
+
+
+### 6 - Order Service
+* La creation du service pour les commandes et la liste des produits associées à chaque commande
+* Utilisation de OpenFeign qui assure la communication entre les services en utilisant des REST api(Json)
+  - Pour customer service
   
+![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/9adb9bda-3b0f-4893-ba9d-1c31ad342ade)
+
+  - Pour Inventory Service
+    
+![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/e9ebfecd-6af5-467a-869a-889b386b7e48)
+
+**Remarque** : Sans oublier @EnableFeignClient 
+
+
+
+
