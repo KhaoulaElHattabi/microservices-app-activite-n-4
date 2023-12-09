@@ -29,6 +29,10 @@ public class InventoryServiceApplication {
 			productRepository.saveAll(List.of(
 					Product.builder().name("Computer")
 							.price(1200+Math.random()*1000)
+							.quantity(1+random.nextInt()).build(),
+
+					Product.builder().name("Computer")
+							.price(1200+Math.random()*1000)
 							.quantity(1+random.nextInt()).build()
 			));
 		};
