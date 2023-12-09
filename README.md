@@ -69,13 +69,15 @@
 * La creation du service pour les commandes et la liste des produits associées à chaque commande
 * Utilisation de OpenFeign qui assure la communication entre les services en utilisant des REST api(Json)
   - Pour customer service
-  - 
+  
 ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/9adb9bda-3b0f-4893-ba9d-1c31ad342ade)
 
   - Pour Inventory Service
     
 ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/e9ebfecd-6af5-467a-869a-889b386b7e48)
 
-**Remarque : Sans oublier @EnableFeignClient**
+**Remarque** : Sans oublier @EnableFeignClient 
+
+
 
 
