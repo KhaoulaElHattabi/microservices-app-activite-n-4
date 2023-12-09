@@ -18,6 +18,11 @@
 - Ajouter une configuration dans les proprietées de **config-service** en ajoutant aussi des annotation ***@EnableConfigServer @EnableDiscoveryClient** dans le main de l'application
   
 ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/12940ae5-702c-49fd-920a-6c176b68bd70)
+
+- Interface de Consul qui contient les services
+  
+  ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/a65bf163-29a3-41ba-91cc-834d9faf3054)
+
 - **Consul Discovery** aide à la gestion, la configuration et la decouverte ds services d'une façon dynamique dans un enviromment distribuées.
   
 #### 2 - Spring Cloud Config
@@ -37,6 +42,18 @@
 - On a commencé par configurer le service gateway pour eviter la connection directe avec les services.
   ![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/281006d1-17d8-4bed-809e-93af9135d9d9)
 
+### 4 - Customer Service
+- Dans ce service on a creer une entité Customer et les données sont stocké dans la BD H2
+  
+![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/9d527ebd-0979-45d4-9d52-47ad36432f50)
+-> En fait on a l'acces au données avec le gatway en utilisant **localhost:9999**
+  
+![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/0829c2b9-91d5-4570-b866-8c356ab9ef06)
+
+### 5 - Inventory Service
+- Dans ce service on a creer une entité Product et les données sont stocké dans la BD H2 en configurant aussi les proprietes de microservice, et finalement on a l'acces avec le gateway
+  
+![image](https://github.com/KhaoulaElHattabi/microservices-app-activite-n-4/assets/92638641/b9e9b8b8-63fa-43a3-ad5a-8bfe1de9020e)
 
 
   
