@@ -44,6 +44,7 @@ public class OrderServiceApplication {
 						.status(Math.random()>0.5? OrderStatus.PENDING:OrderStatus.CREATED)
 						.createdAt(new Date())
 						.build();
+
 			}
 		};
 

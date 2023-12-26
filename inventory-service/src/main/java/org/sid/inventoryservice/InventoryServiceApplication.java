@@ -31,7 +31,7 @@ public class InventoryServiceApplication {
 							.price(1200+Math.random()*1000)
 							.quantity(1+random.nextInt()).build(),
 
-					Product.builder().name("Computer")
+					Product.builder().name("Monitor ")
 							.price(1200+Math.random()*1000)
 							.quantity(1+random.nextInt()).build()
 			));
