@@ -25,4 +25,7 @@ public class ProductItem {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Order order;
 
+    public double getAmount(){
+        return price*quantity*(1-discount);
+    }
 }

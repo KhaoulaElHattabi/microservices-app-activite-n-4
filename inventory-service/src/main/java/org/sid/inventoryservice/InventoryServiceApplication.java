@@ -22,19 +22,16 @@ public class InventoryServiceApplication {
 	@Bean
 	CommandLineRunner start(ProductRepository productRepository){
 		return args -> {
-			Random random = new Random();
-			for (int i = 0; i < 10; i++) {
-				
+			Random random=new Random();
+			for (int i = 1; i <10 ; i++) {
+				productRepository.saveAll(List.of(
+						Product.builder()
+								.name("Computer "+i)
+								.price(1200+Math.random()*10000)
+								.quantity(1+random.nextInt(200)).build()
+				));
 			}
-			productRepository.saveAll(List.of(
-					Product.builder().name("Computer")
-							.price(1200+Math.random()*1000)
-							.quantity(1+random.nextInt()).build(),
 
-					Product.builder().name("Monitor ")
-							.price(1200+Math.random()*1000)
-							.quantity(1+random.nextInt()).build()
-			));
 		};
 	}
 }

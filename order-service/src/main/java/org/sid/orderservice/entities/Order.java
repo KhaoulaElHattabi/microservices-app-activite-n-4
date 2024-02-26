@@ -10,6 +10,7 @@ import org.sid.orderservice.model.Customer;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Table(name="orders")
 @Entity
@@ -25,6 +26,15 @@ public class Order {
     @Transient
     private Customer customer;
     @OneToMany(mappedBy = "order")
-    private List<ProductItem> products;
+    private List<ProductItem> productItems;
+
+    public double getTotal(){
+        double somme = 0;
+        for(ProductItem pi:productItems){
+            somme+=pi.getAmount();
+        }
+        return somme;
+    }
+
 
 }

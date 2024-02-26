@@ -11,7 +11,7 @@ import java.util.List;
 @FeignClient(name = "inventory-service")
 public interface InventoryRestClientService {
     @GetMapping("/products/{id}?projection=fullProduct")
-    public Product customerById(@PathVariable Long id);
+    public Product productById(@PathVariable Long id);
     @GetMapping("/products?projection=fullProduct")
     public PagedModel<Product> allProducts();
 }
